@@ -1,0 +1,44 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="hpc-slurm" category="compute" audience="software" href="/docs/hpc-slurm?topic=hpc-slurm-getting-started-tutorial" path="hpc-slurm"}
+Slurm on IBM Cloud
+
+    {: .navgroup id="learn"}
+    getting-started.md
+    about.md
+    deployment-values.md
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    {: .topicgroup}
+    Setting up the CLI and API
+        setting-up-cli.md
+        setting-up-api.md
+
+    creating-workspace.md
+    generating-plan.md
+    applying-plan.md
+    destroying-resources.md
+    deleting-workspace.md
+    retrieving-action-logs.md
+    updating-variables.md
+
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    /docs/schematics/schematics-schematics-cli-reference
+    [IBM Cloud Schematics API](https://cloud.ibm.com/apidocs/schematics)
+    /docs/schematics/schematics-schematics-sdks
+
+    
+    {: .topicgroup}
+    Hybrid connectivity
+        install-vpn-hpc-cluster.md
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    faq.md
+    troubleshooting.md
+    getting-help.md
+    {: .navgroup-end}
