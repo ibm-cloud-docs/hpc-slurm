@@ -1,0 +1,52 @@
+toc:
+  properties:
+    subcollection: hpc-slurm
+    category: compute
+    audience: software
+    href: /docs/hpc-slurm
+    path: hpc-slurm
+    label: Slurm on IBM Cloud
+  entries: 
+  - navgroup: 
+      id: learn
+      topics:
+      - getting-started.md
+      - about.md
+      - deployment-values.md
+  - navgroup: 
+      id: howto
+      topics:
+      - topicgroup: 
+          label: Setting up CLI and API
+          topics: 
+          - setting-up-cli.md
+          - setting-up-api.md
+      - creating-workspace.md
+      - generating-plan.md
+      - applying-plan.md
+      - destroying-resources.md
+      - deleting-workspace.md
+      - retrieving-action-logs.md
+      - updating-variables.md
+  - navgroup:
+      id: reference
+      topics: 
+      - topicgroup:
+          label: IBM Cloud Schematics CLI
+          topics:
+          - /schematics/schematics-schematics-cli-reference
+          - /schematics/schematics-cli_version-releases 
+      - link: 
+          label: IBM Cloud Schematics API
+          href: https://cloud.ibm.com/apidocs/schematics
+      - /schematics/schematics-schematics-sdks
+      - topicgroup:
+          label: Hybrid connectivity 
+          topics:
+          - install-vpn-hpc-cluster.md
+  - navgroup:
+      id: help
+      topics: 
+      - faq.md
+      - troubleshooting.md
+      - getting-help.md
