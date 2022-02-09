@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-15"
+  years: 2021, 2022
+lastupdated: "2022-02-08"
 
 keywords: 
 
@@ -33,23 +33,23 @@ With {{site.data.keyword.bplong}} workspaces, you can manage the Terraform-based
 {: #create-workspace-ui}
 {: ui}
 
-1. Go to [Schematics, IBM Cloud’s deployment manager](https://cloud.ibm.com/schematics), select Workspaces and then select `Create workspace` using Schematics.
+1. Go to [Schematics, IBM Cloud’s deployment manager](https://cloud.ibm.com/schematics), select Workspaces and then select `Create workspace` using {{site.data.keyword.bpshort}}.
 2. In the Specify template section:
-- Provide your GitHub, GitLab or Bitbucket repository URL where your Terraform files reside. The Slurm repository is provided by IBM Cloud at this [URL](https://github.com/IBM-Cloud/hpc-cluster-slurm)
-- If you are using a private GitHub repository, provide your personal GitHub access token that you set up in `Setting up the IBM Cloud Schematics prerequisites`
-- Select the version of the Terraform engine that's used in the Schematics workspace, and then click Next.
+- Provide your GitHub, GitLab or Bitbucket repository URL where your Terraform files reside. The {{site.data.keyword.slurm_short}} repository is provided by {{site.data.keyword.Bluemix_notm}} at this [URL](https://github.com/IBM-Cloud/hpc-cluster-slurm)
+- If you are using a private GitHub repository, provide your personal GitHub access token that you set up in `Setting up the {{site.data.keyword.Bluemix_notm}} Schematics prerequisites`
+- Select the version of the Terraform engine that's used in the {{site.data.keyword.bpshort}} workspace, and then click Next.
 3. In the workspace details section:
-- Specify the Name for your Schematics workspace
-- Define any Tags that you want to associate with the resources provisioned through the offering. The tags can later be used to query the resources in the IBM Cloud console.
+- Specify the Name for your {{site.data.keyword.bpshort}} workspace
+- Define any Tags that you want to associate with the resources provisioned through the offering. The tags can later be used to query the resources in the {{site.data.keyword.Bluemix_notm}} console.
 - Select a Resource group
 - Select a Location. Location determines where the workspace actions will be executed.
-- Provide a Description (optional) of the Schematics workspace
-- Click on `Next` and Then click `Create`. The Schematics workspace is created with the name that you specified.
+- Provide a Description (optional) of the {{site.data.keyword.bpshort}} workspace
+- Click on `Next` and Then click `Create`. The {{site.data.keyword.bpshort}} workspace is created with the name that you specified.
 4. Go to Schematic Workspace Settings, and under `variable section`, click on "burger icons" to update the following parameters:
-- `ssh_key_name` with your IBM cloud SSH key name such as "slurm-ssh-key" that is created in a specific region in IBM Cloud
-- `api_key` with the api key value. Mark it as sensitive to hide the API key in the IBM Cloud Console.
-- Update the `cluster_prefix value` to the specific cluster prefix for your Slurm cluster
-- Update the `cluster_id`. This is the ID of the cluster that is used by Slurm for configuration of resources.
+- `ssh_key_name` with your {{site.data.keyword.Bluemix_notm}} SSH key name such as "slurm-ssh-key" that is created in a specific region in {{site.data.keyword.Bluemix_notm}}
+- `api_key` with the api key value. Mark it as sensitive to hide the API key in the {{site.data.keyword.Bluemix_notm}} Console.
+- Update the `cluster_prefix value` to the specific cluster prefix for your {{site.data.keyword.slurm_short}} cluster
+- Update the `cluster_id`. This is the ID of the cluster that is used by {{site.data.keyword.slurm_short}} for configuration of resources.
 - Update the worker_node_count as per your requirement
 
 

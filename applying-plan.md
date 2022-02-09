@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-15"
+  years: 2021, 2022
+lastupdated: "2022-02-08"
 
 keywords: 
 
@@ -26,7 +26,7 @@ subcollection: hpc-slurm
 # Applying a plan
 {: #applying-plan}
 
-When you apply a plan, the {{site.data.keyword.cloud}} resources are deployed to build a Slurm cluster instance on your {{site.data.keyword.cloud_notm}} account with your specific choice of configuration properties. 
+When you apply a plan, the {{site.data.keyword.cloud}} resources are deployed to build a {{site.data.keyword.slurm_short}} cluster instance on your {{site.data.keyword.cloud_notm}} account with your specific choice of configuration properties. 
 
 ## Applying a plan using the UI
 {: #apply-plan-ui}
@@ -67,7 +67,7 @@ ibmcloud schematics logs --id <WORKSPACE_ID>
 ```
 {: screen}
 
-After the plan is successfully applied, it generates an `sshcommand` in the _Outputs_ section in the Terraform code. You can use this command to log in to the Slurm cluster. If you specified IP addresses for `ssh_allowed_ips` property only, those IP address machines would be able to use this SSH command.
+After the plan is successfully applied, it generates an `sshcommand` in the _Outputs_ section in the Terraform code. You can use this command to log in to the {{site.data.keyword.slurm_short}} cluster. If you specified IP addresses for `ssh_allowed_ips` property only, those IP address machines would be able to use this SSH command.
 
 ## Applying a plan using the API
 {: #apply-plan-api}

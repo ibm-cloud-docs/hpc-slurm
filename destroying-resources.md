@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-15"
+  years: 2021, 2022
+lastupdated: "2022-02-08"
 
 keywords: 
 
@@ -26,7 +26,7 @@ subcollection: hpc-slurm
 # Destroying resources
 {: #deleting-resources}
 
-If you don't need the Slurm cluster and want to destroy all of its associated VPC resources, you can remove them from your {{site.data.keyword.cloud}} account.
+If you don't need the {{site.data.keyword.slurm_short}} cluster and want to destroy all of its associated VPC resources, you can remove them from your {{site.data.keyword.cloud}} account.
 
 Before you perform the actions to destroy the resources, you must ensure that the total number of worker nodes in the cluster should be equal to the value you specified for `worker_node_count`.
 {: important}
@@ -35,7 +35,7 @@ Before you perform the actions to destroy the resources, you must ensure that th
 {: #destroy-resources-ui}
 {: ui}
 
-1. In the {{site.data.keyword.cloud_notm}} console on the **Schematics > Workspaces** page, select **Actions > Destroy** to delete all of the related VPC resources that were deployed as part of that workspace.
+1. In the {{site.data.keyword.cloud_notm}} console on the **{{site.data.keyword.slurm_short}} > Workspaces** page, select **Actions > Destroy** to delete all of the related VPC resources that were deployed as part of that workspace.
 2. If you select the option to destroy resources, decide whether you want to destroy all of them. This action cannot be undone. 
 3. Confirm the action by entering the workspace name in the text box and click **Destroy**.
 
