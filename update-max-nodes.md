@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-15"
+  years: 2021, 2022
+lastupdated: "2022-02-09"
 
 keywords: 
 
@@ -25,12 +25,12 @@ subcollection: hpc-slurm
 ## Making updates to the Slurm configuration using the GUI
 {: #update-max-worker-nodes-gui}
 
-You can make updates to Slurm configuration using the GUI console or through CLI.
+You can make updates to {{site.data.keyword.slurm_short}} configuration using the GUI console or through CLI.
 
 ### Configuration updates using Slurm GUI console
 {: #update-max-worker-nodes-slurm-gui-console}
 
-Please reference the topic [Slurm GUI console](/docs/hpc-slurm?topic=hpc-slurm-gui-console&interface=ui) for more information on how to use Slurm GUI console. 
+Please reference the topic [Slurm GUI console](/docs/hpc-slurm?topic=hpc-slurm-gui-console&interface=ui) for more information on how to use {{site.data.keyword.slurm_short}} GUI console. 
 
 Once you login to console please follow these steps to update the maximum number of worker nodes:
 

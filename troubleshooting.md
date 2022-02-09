@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-15"
+  years: 2021, 2022
+lastupdated: "2022-02-09"
 
 keywords: 
 
@@ -32,7 +32,7 @@ subcollection: hpc-slurm
 {: troubleshoot}
 {: support}
 
-Schematics isn't able to clone the private GitHub repository, and you are seeing the following error message: `Failed to clone git repository, repository not found (check url, also check the scope 'repo' of the personal access token if SCHEMATICSGITTOKEN is used)`
+{{site.data.keyword.bpshort}} isn't able to clone the private GitHub repository, and you are seeing the following error message: `Failed to clone git repository, repository not found (check url, also check the scope 'repo' of the personal access token if SCHEMATICSGITTOKEN is used)`
 {: tsSymptoms}
 
 You didn't provide the correct GitHub token, or you didn't provide a GitHub token altogether.
@@ -46,7 +46,7 @@ Provide a [GitHub token](https://docs.github.com/en/github/authenticating-to-git
 {: troubleshoot}
 {: support}
 
-Schematics isn't able to clone the public GitHub repository, and you are seeing one of the following error messages:
+{{site.data.keyword.bpshort}} isn't able to clone the public GitHub repository, and you are seeing one of the following error messages:
 
 * `Fatal, could not download repo, Failed to clone git repository, authentication required (or the git url is incorrect). Problems found with the Repository. Please Rectify and Retry`
 * `Template error: Failed to clone git repository, authentication required (or the git url is incorrect)`
@@ -63,13 +63,13 @@ Do not provide a GitHub token, and check to see whether the GitHub token was pro
 {: troubleshoot}
 {: support}
 
-Schematics isn't able to create a workspace, and you are seeing the following error message: `You don't have the required to create a workspace in any resource groups. You must be assigned the manager role on the Schematics service in at least one resource group. Contact your account administrator for access.`
+{{site.data.keyword.bpshort}} isn't able to create a workspace, and you are seeing the following error message: `You don't have the required to create a workspace in any resource groups. You must be assigned the manager role on the {{site.data.keyword.bpshort}} service in at least one resource group. Contact your account administrator for access.`
 {: tsSymptoms}
 
-You don't have the required access to create a workspace in any resource groups. You must be assigned the manager role on the Schematics service in at least one resource group.
+You don't have the required access to create a workspace in any resource groups. You must be assigned the manager role on the {{site.data.keyword.bpshort}} service in at least one resource group.
 {: tsCauses}
 
-Contact your account administrator and get assigned with the manager role on the Schematics service in at least one resource group.
+Contact your account administrator and get assigned with the manager role on the {{site.data.keyword.bpshort}} service in at least one resource group.
 {: tsResolve}
 
 ## Why is IBM Cloud Schematics not able to provision the cluster and fails with an authorization error?
@@ -77,7 +77,7 @@ Contact your account administrator and get assigned with the manager role on the
 {: troubleshoot}
 {: support}
 
-Schematics isn't able to provision the cluster, and you are seeing the following error message: `Request is not authorized. Check your user permissions and authorizations and try again.`
+{{site.data.keyword.bpshort}} isn't able to provision the cluster, and you are seeing the following error message: `Request is not authorized. Check your user permissions and authorizations and try again.`
 {: tsSymptoms}
 
 You don't have the required access to get any VPC resources provisioned. 
@@ -91,7 +91,7 @@ Contact your account administrator and get all of the required accesses. For mor
 {: troubleshoot}
 {: support}
 
-Schematics isn't able to provision the cluster, and you are seeing the following example error message:
+{{site.data.keyword.bpshort}} isn't able to provision the cluster, and you are seeing the following example error message:
 {: tsSymptoms}
 
 ```
@@ -116,7 +116,7 @@ Deprovision the existing resource and try again.
 {: troubleshoot}
 {: support}
 
-While using a custom image, Schematics isn't able to provision the cluster, and you are seeing one of the following error messages:
+While using a custom image, {{site.data.keyword.bpshort}} isn't able to provision the cluster, and you are seeing one of the following error messages:
 
 * `The arugment "image" is required, but no definition was found.`
 * `Unknown variable. There is no variable named "image_id".`

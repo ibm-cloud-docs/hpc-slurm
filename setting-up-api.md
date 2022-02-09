@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-15"
+  years: 2021, 2022
+lastupdated: "2022-02-09"
 
 keywords: 
 
@@ -23,7 +23,7 @@ subcollection: hpc-slurm
 # Setting up the IBM Cloud Schematics API
 {: #setting-up-api}
 
-Before you begin using the {{site.data.keyword.bplong}} API to deploy Slurm, review and complete the following prerequisites: 
+Before you begin using the {{site.data.keyword.bplong}} API to deploy {{site.data.keyword.slurm_short}}, review and complete the following prerequisites: 
 
 1. Make sure that you have access to an {{site.data.keyword.cloud_notm}} account and that you generated an {{site.data.keyword.cloud_notm}} API key to authenticate to {{site.data.keyword.cloud_notm}}.
 2. If the git repository that hosts the Terraform code is not public, generate a [personal GitHub access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token){: external} for authentication. If you are using the [public {{site.data.keyword.cloud_notm}} GitHub repository](https://github.com/IBM-Cloud/hpc-cluster-slurm){: external} (broken link), you do not need to complete this task.

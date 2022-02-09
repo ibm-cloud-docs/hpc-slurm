@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-15"
+  years: 2021, 2022
+lastupdated: "2022-02-09"
 
 keywords: 
 
@@ -28,7 +28,7 @@ subcollection: hpc-slurm
 {: #my-faq-packages}
 {: faq}
 
-Cluster nodes deployed with this offering include Slurm 19.05.5-1 Advanced Edition. 
+Cluster nodes deployed with this offering include {{site.data.keyword.slurm_short}} 19.05.5-1 Advanced Edition. 
 
 ## What locations are available for deploying VPC resources?
 {: #locations-vpc-resources}
@@ -40,7 +40,7 @@ Available regions and zones for deploying VPC resources, and a mapping of those 
 {: #permissions-cluster-offering}
 {: faq}
 
-Instructions for setting the appropriate permissions for IBM Cloud services that are used by the offering to create a cluster can be found in [Granting user permissions for VPC resources, Managing user access for Schematics, Assigning access to Secrets Manager](/docs/vpc?topic=vpc-managing-user-permissions-for-vpc-resources&locale=en).
+Instructions for setting the appropriate permissions for {{site.data.keyword.Bluemix_notm}} services that are used by the offering to create a cluster can be found in [Granting user permissions for VPC resources, Managing user access for Schematics, Assigning access to Secrets Manager](/docs/vpc?topic=vpc-managing-user-permissions-for-vpc-resources&locale=en).
 
 
 ## How do I SSH among nodes?
@@ -78,7 +78,7 @@ Prior to deploying a cluster, it is important to ensure that the VPC resource qu
 
 The number of worker nodes that are supported for the deployment value worker_node_count is 500 (see [Deployment values](/docs/hpc-slurm?topic=hpc-slurm-deployment-values))). The worker_node_count variable specifies the number of worker nodes that are provisioned at the time that the cluster is created, which will exist throughout the life of the cluster.
 
-When creating or deleting a cluster with a large number of worker nodes, you may encounter VPC resource provisioning or deletion failures. In those cases, running the Schematics apply or destroy operation again may result in the remaining resources being successfully provisioned or deleted. If you continue to see errors, see [Getting help and support](/docs/hpc-slurm?topic=hpc-slurm-getting-help-and-support).
+When creating or deleting a cluster with a large number of worker nodes, you may encounter VPC resource provisioning or deletion failures. In those cases, running the {{site.data.keyword.bpshort}} apply or destroy operation again may result in the remaining resources being successfully provisioned or deleted. If you continue to see errors, see [Getting help and support](/docs/hpc-slurm?topic=hpc-slurm-getting-help-and-support).
 
 ## Does the offering support the Terraform parallelism flag?
 {: #terraform-parallelism}

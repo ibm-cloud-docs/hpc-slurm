@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-15"
+  years: 2021, 2022
+lastupdated: "2022-02-09"
 
 keywords: 
 
@@ -29,7 +29,7 @@ subcollection: hpc-slurm
 ## Configure an SSH tunnel to the cluster to allow access
 {: #configuring-an-SSH-tunnel-to-the-cluster}
 
-Before you can access the Slurm cluster management console, you need to configure an SSH tunnel to the cluster to allow access to the management console through a local browser instance. You can do this by configuring port forwarding on your local browser host. 
+Before you can access the {{site.data.keyword.slurm_short}} cluster management console, you need to configure an SSH tunnel to the cluster to allow access to the management console through a local browser instance. You can do this by configuring port forwarding on your local browser host. 
 
 1. Execute the following command to create the SSH tunnel:
 
@@ -49,5 +49,3 @@ Before you can access the Slurm cluster management console, you need to configur
 {:note .note}
 
 Further information on how to use Slurm UI can be found at [Accessing the cluster management console](/docs/en/slurm/7.3.1?topic=cluster-accessing-management-console#accessing_PMC).
-
-v

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-12-15"
+  years: 2021, 2022
+lastupdated: "2022-02-09"
 
 keywords: 
 
@@ -168,21 +168,21 @@ class HPCCEnvironmentValues:
             "value": "hpcc-slurm-test",
             "type": "string",
             "secure": false,
-            "description": "Prefix that is used to name the Slurm cluster and IBM Cloud resources that are provisioned to build the Slurm cluster instance. You cannot create more than one instance of the Slurm cluster with the same name. Make sure that the name is unique. Enter a prefix name, such as my-hpcc."
+            "description": "Prefix that is used to name the {{site.data.keyword.slurm_short}} cluster and {{site.data.keyword.Bluemix_notm}} resources that are provisioned to build the {{site.data.keyword.slurm_short}} cluster instance. You cannot create more than one instance of the {{site.data.keyword.slurm_short}} cluster with the same name. Make sure that the name is unique. Enter a prefix name, such as my-hpcc."
           },
           {
             "name": "ssh_key_name",
             "value": "Please fill here",
             "type": "string",
             "secure": false,
-            "description":"Comma-separated list of names of the SSH key configured in your IBM Cloud account that is used to establish a connection to the Slurm master node. Ensure the SSH key is present in the same resource group and region where the cluster is being provisioned. If you do not have an SSH key in your IBM Cloud account, create one by using the instructions given here. [Learn more](https://cloud.ibm.com/docs/vpc?topic=vpc-ssh-keys)."
+            "description":"Comma-separated list of names of the SSH key configured in your {{site.data.keyword.Bluemix_notm}} account that is used to establish a connection to the {{site.data.keyword.slurm_short}} master node. Ensure the SSH key is present in the same resource group and region where the cluster is being provisioned. If you do not have an SSH key in your {{site.data.keyword.Bluemix_notm}} account, create one by using the instructions given here. [Learn more](https://cloud.ibm.com/docs/vpc?topic=vpc-ssh-keys)."
           },
           {
             "name": "api_key",
             "value": "Please fill here",
             "type": "string",
             "secure": true,
-            "description": "This is the API key for IBM Cloud account in which the Slurm cluster needs to be deployed. [Learn more](https://cloud.ibm.com/docs/account?topic=account-userapikey)."
+            "description": "This is the API key for {{site.data.keyword.Bluemix_notm}} account in which the {{site.data.keyword.slurm_short}} cluster needs to be deployed. [Learn more](https://cloud.ibm.com/docs/account?topic=account-userapikey)."
           }  
         ]
       }
