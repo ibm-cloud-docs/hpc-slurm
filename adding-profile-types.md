@@ -16,7 +16,7 @@ subcollection: hpc-slurm
 {:external: target="_blank" .external}
 {:pre: .pre}
 {:tip: .tip}
-{:note .note}
+{:note: .note}
 {:important: .important}
 
 # Adding compute profile types for auto scaling

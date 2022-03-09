@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-02-09"
+lastupdated: "2022-03-09"
 
 keywords: 
 
@@ -16,7 +16,7 @@ subcollection: hpc-slurm
 {:external: target="_blank" .external}
 {:pre: .pre}
 {:tip: .tip}
-{:note .note}
+{:note: .note}
 {:important: .important}
 {:step: data-tutorial-type='step'}
 {:table: .aria-labeledby="caption"}
@@ -38,7 +38,8 @@ subcollection: hpc-slurm
 5. Make sure to update the required parameters, such as `api_key`, `ssh_key_name`, `cluster_prefix` in the `config.json` file.
 6. Run the Python script by using python3 to update the variables in the {{site.data.keyword.bpshort}} workspace in the {{site.data.keyword.cloud_notm}}.
 
-**Note**: The following parameters might not be required in `config.json` as the {{site.data.keyword.bpshort}} update variables API uses the `workspace ID w_id` to update the variables against that workspace.
+The following parameters might not be required in `config.json` as the {{site.data.keyword.bpshort}} update variables API uses the `workspace ID w_id` to update the variables against that workspace.
+{: note}
 
 ```
 {
@@ -168,21 +169,21 @@ class HPCCEnvironmentValues:
             "value": "hpcc-slurm-test",
             "type": "string",
             "secure": false,
-            "description": "Prefix that is used to name the {{site.data.keyword.slurm_short}} cluster and {{site.data.keyword.Bluemix_notm}} resources that are provisioned to build the {{site.data.keyword.slurm_short}} cluster instance. You cannot create more than one instance of the {{site.data.keyword.slurm_short}} cluster with the same name. Make sure that the name is unique. Enter a prefix name, such as my-hpcc."
+            "description": "Prefix that is used to name the Slurm cluster and IBM Cloud resources that are provisioned to build the Slurm cluster instance. You cannot create more than one instance of the Slurm cluster with the same name. Make sure that the name is unique. Enter a prefix name, such as my-hpcc."
           },
           {
             "name": "ssh_key_name",
             "value": "Please fill here",
             "type": "string",
             "secure": false,
-            "description":"Comma-separated list of names of the SSH key configured in your {{site.data.keyword.Bluemix_notm}} account that is used to establish a connection to the {{site.data.keyword.slurm_short}} master node. Ensure the SSH key is present in the same resource group and region where the cluster is being provisioned. If you do not have an SSH key in your {{site.data.keyword.Bluemix_notm}} account, create one by using the instructions given here. [Learn more](https://cloud.ibm.com/docs/vpc?topic=vpc-ssh-keys)."
+            "description":"Comma-separated list of names of the SSH key configured in your IBM Cloud account that is used to establish a connection to the Slurm master node. Ensure the SSH key is present in the same resource group and region where the cluster is being provisioned. If you do not have an SSH key in your IBM Cloud account, create one by using the instructions given here. [Learn more](https://cloud.ibm.com/docs/vpc?topic=vpc-ssh-keys)."
           },
           {
             "name": "api_key",
             "value": "Please fill here",
             "type": "string",
             "secure": true,
-            "description": "This is the API key for {{site.data.keyword.Bluemix_notm}} account in which the {{site.data.keyword.slurm_short}} cluster needs to be deployed. [Learn more](https://cloud.ibm.com/docs/account?topic=account-userapikey)."
+            "description": "This is the API key for IBM Cloud account in which the Slurm cluster needs to be deployed. [Learn more](https://cloud.ibm.com/docs/account?topic=account-userapikey)."
           }  
         ]
       }
