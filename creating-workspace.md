@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-03-09"
+lastupdated: "2022-04-14"
 
 keywords: 
 
@@ -16,7 +16,7 @@ subcollection: hpc-slurm
 {:external: target="_blank" .external}
 {:pre: .pre}
 {:tip: .tip}
-{:note .note}
+{:note: .note}
 {:important: .important}
 {:ui: .ph data-hd-interface='ui'}
 {:cli: .ph data-hd-interface='cli'}
@@ -33,25 +33,25 @@ With {{site.data.keyword.bplong}} workspaces, you can manage the Terraform-based
 {: #create-workspace-ui}
 {: ui}
 
-1. Go to [Schematics, IBM Cloud’s deployment manager](https://cloud.ibm.com/schematics), select Workspaces and then select `Create workspace` using {{site.data.keyword.bpshort}}.
-2. In the Specify template section:
-- Provide your GitHub, GitLab, or Bitbucket repository URL where your Terraform files reside. The {{site.data.keyword.slurm_short}} repository is provided by {{site.data.keyword.Bluemix_notm}} at this [URL](https://github.com/IBM-Cloud/hpc-cluster-slurm){: external}.
-- If you are using a private GitHub repository, provide your personal GitHub access token that you set up in `Setting up the {{site.data.keyword.Bluemix_notm}} Schematics prerequisites`
-- Select the version of the Terraform engine that's used in the {{site.data.keyword.bpshort}} workspace, and then click Next.
-3. In the workspace details section:
-- Specify the name for your {{site.data.keyword.bpshort}} workspace.
-- Define any tags that you want to associate with the resources provisioned through the offering. The tags can later be used to query the resources in the {{site.data.keyword.Bluemix_notm}} console.
-- Select a resource group.
-- Select a Location. Location determines where the workspace actions are run.
-- Provide a description (optional) of the {{site.data.keyword.bpshort}} workspace.
-- Click **Next** and then click **Create**. The {{site.data.keyword.bpshort}} workspace is created with the name that you specified.
-4. Go to **Schematic Workspace Settings**, and in the `variable section`, click "burger icons" to update the following parameters:
-- `ssh_key_name` with your {{site.data.keyword.Bluemix_notm}} SSH key name such as "slurm-ssh-key" that is created in a specific region in {{site.data.keyword.Bluemix_notm}}
-- `api_key` with the API key value. Mark it as sensitive to hide the API key in the {{site.data.keyword.Bluemix_notm}} console.
-- Update the `cluster_prefix value` to the specific cluster prefix for your {{site.data.keyword.slurm_short}} cluster.
-- Update the `cluster_id`. This is the ID of the cluster that is used by {{site.data.keyword.slurm_short}} for configuration of resources.
-- Update the `worker_node_count` according to your requirement.
-
+1. Go to [Schematics, IBM Cloud’s deployment manager](https://cloud.ibm.com/schematics){: external}, select **Workspaces**, and then select **Create workspace**.
+2. In the _Specify template_ section:
+    * Provide your GitHub, GitLab, or Bitbucket repository URL where your Terraform files reside. The {{site.data.keyword.slurm_short}} repository is provided by {{site.data.keyword.Bluemix_notm}} in this [public GitHub repository](https://github.com/IBM-Cloud/hpc-cluster-slurm){: external}.
+    * If you are using a private GitHub repository, provide your personal GitHub access token.
+    * Select the version of the Terraform engine that's used in the {{site.data.keyword.bpshort}} workspace, and then click **Next**.
+3. In the _Workspace details_ section:
+    * Specify the name for your {{site.data.keyword.bpshort}} workspace.
+    * Define any tags that you want to associate with the resources provisioned through the offering. The tags can later be used to query the resources in the {{site.data.keyword.Bluemix_notm}} console.
+    * Select a resource group.
+    * Select a location. The location determines where the workspace actions are run.
+    * Provide a description (optional) of the {{site.data.keyword.bpshort}} workspace.
+    * Click **Next** and then click **Create**. The {{site.data.keyword.bpshort}} workspace is created with the name that you specified.
+4. Go to **Schematic Workspace Settings**, and in the variable section, click "burger icons" to update the following parameters:
+    * Update `api_key` with the API key value. Mark it as sensitive to hide the API key in the {{site.data.keyword.Bluemix_notm}} console.
+    * Update `ssh_key_name` with your {{site.data.keyword.Bluemix_notm}} SSH key name such as "slurm-ssh-key" that is created in a specific region in {{site.data.keyword.Bluemix_notm}}.
+    * Update the `zone` value where the cluster should be deployed.
+    * Update the `cluster_prefix value` to the specific cluster prefix for your {{site.data.keyword.slurm_short}} cluster.
+    * Update the `cluster_id`. This is the ID of the cluster that is used by {{site.data.keyword.slurm_short}} for configuration of resources.
+    * Update the `worker_node_count` according to your requirement.
 
 ## Next steps
 {: #next-steps-create-ui}
@@ -95,7 +95,7 @@ ibmcloud schematics workspace list
 Example response with workspace details:
 
 ```
-Name                ID                                           Description           Status         Frozen
+Name         ID                                             Description           Status         Frozen
 slurm-test   us-east.workspace.bcc-slurm-test.7cbc3f6b      Sample workspace      INACTIVE       False
 ```
 {: screen}
@@ -122,7 +122,7 @@ ibmcloud schematics workspace update --id WORKSPACE_ID --file FILE_NAME [--githu
 ```
 {: pre}
 
-To provision or modify {{site.data.keyword.cloud_notm}} resources, you can run the command `ibmcloud schematics plan` command. For more information, see the [{{site.data.keyword.bplong_notm}} CLI](/docs/ibm-slurm?topic=schematics-schematics-cli-reference#schematics-plan) reference.
+To provision or modify {{site.data.keyword.cloud_notm}} resources, you can run the command `ibmcloud schematics plan` command. For more information, see the [{{site.data.keyword.bplong_notm}} CLI](/docs/hpc-slurm?topic=schematics-schematics-cli-reference#schematics-plan) reference.
 
 ## Next steps
 {: #next-steps-create-cli}
@@ -164,6 +164,7 @@ Before you get started, make sure that you've completed the prerequisites found 
     * `workspace_variable_request_model['name'] = 'base_name'` 
     * `workspace_variable_request_model['value'] = 'slurm-test'`
 8. If you want to update multiple values at the same time, follow the steps for [Updating variables with {{site.data.keyword.bpshort}} API](/docs/hpc-slurm?topic=hpc-slurm-update-variables&interface=api).
+
 ### Example Python request
 {: #example-request-create}
 {: api}
