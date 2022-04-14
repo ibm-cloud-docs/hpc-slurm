@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-02-09"
+lastupdated: "2022-04-14"
 
 keywords: 
 
@@ -85,7 +85,7 @@ After you've successfully generated a plan, you can begin [Applying a plan](/doc
     ```
     {: pre}
 
-5. Make sure to update the following required parameters: `api_key` and `ssh_key_name`.
+5. Make sure to update the following required parameters: `api_key`, `ssh_key_name`, and `zone`.
 6. Run the Python script by using `python3 <python-file-name>` to generate a plan in the {{site.data.keyword.cloud_notm}}.
 7. You get an activity ID in the response if the parameters passed as part of the request are valid. You should be able to see the plan generating in the {{site.data.keyword.bpshort}} workspace that you created in the {{site.data.keyword.cloud_notm}} console. If you don’t get a successful response, the error response contains the errors that you need to resolve. Resolve those errors and run the script until you are able to get a valid response and generate a plan.
 8. If you want to check the logs of the action, see [Retrieving action logs with {{site.data.keyword.bpshort}} API](/docs/hpc-slurm?topic=hpc-slurm-retrieve-action-logs&interface=api) to retrieve the logs. The response contains the status of the action, and it appears in either a `COMPLETED` or `FAILED` state.
