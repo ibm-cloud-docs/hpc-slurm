@@ -13,6 +13,7 @@ toc:
       - getting-started.md
       - about.md
       - deployment-values.md
+      - release-notes.md
   - navgroup: 
       id: howto
       topics:
