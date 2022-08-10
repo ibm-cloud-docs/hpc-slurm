@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-03-09"
+lastupdated: "2022-08-10"
 
 keywords: 
 
@@ -24,17 +24,11 @@ subcollection: hpc-slurm
 # Updating variables with Schematics API
 {: #update-variables}
 
-1. To update variables by using the {{site.data.keyword.bplong}} Python APIs, create two Python files, and provide a name of your choice for those files, following these links for example: [schematics_variables_update.py](/docs/hpc-slurm?topic=hpc-slurm-update-variables#example-request-update-variables) and [schematics_env_class.py](/docs/hpc-slurm?topic=hpc-slurm-update-variables#example-request-update-variables-file).
-
-2. Copy and paste the `schematics_variables_update.py` and `schematics_env_class.py` Python example code requests to the respective Python files. Click below for code examples:
-
-    [schematics_variables_update.py](/docs/hpc-slurm?topic=hpc-slurm-update-variables#example-request-update-variables)
-
-    [schematics_env_class.py](/docs/hpc-slurm?topic=hpc-slurm-update-variables#example-request-update-variables-file)
-
+. To update variables by using the {{site.data.keyword.bplong}} Python APIs, create two Python files, and provide a name of your choice for those files, for example, `schematics_variables_update.py` and `schematics_env_class.py`.
+2. Copy and paste the [`schematics_variables_update.py`](/docs/hpc-slurm?topic=hpc-slurm-update-variables#example-request-update-variables) and [`schematics_env_class.py`](/docs/hpc-slurm?topic=hpc-slurm-update-variables#example-request-update-variables-file) Python example code requests to the respective Python files.
 3. Copy and paste the [`config.json` template file](/docs/hpc-slurm?topic=hpc-slurm-update-variables#template-file) to a JSON file, for example `config.json`.
 4. Change the following parameters as part of the request:
-  * Provide the `workspace ID w_id` generated in both the following functions: `schematic_obj.get_workspace(w_id="<w_id>)` and `schematic_obj.update_variables(w_id="<wi_id>")`.
+    * Provide the `workspace ID w_id` generated in both the following functions: `schematic_obj.get_workspace(w_id="<w_id>)` and `schematic_obj.update_variables(w_id="<wi_id>")`.
 5. Make sure to update the required parameters, such as `api_key`, `ssh_key_name`, `cluster_prefix` in the `config.json` file.
 6. Run the Python script by using python3 to update the variables in the {{site.data.keyword.bpshort}} workspace in the {{site.data.keyword.cloud_notm}}.
 
@@ -176,7 +170,7 @@ class HPCCEnvironmentValues:
             "value": "Please fill here",
             "type": "string",
             "secure": false,
-            "description":"Comma-separated list of names of the SSH key configured in your IBM Cloud account that is used to establish a connection to the Slurm master node. Ensure the SSH key is present in the same resource group and region where the cluster is being provisioned. If you do not have an SSH key in your IBM Cloud account, create one by using the instructions given here. [Learn more](https://cloud.ibm.com/docs/vpc?topic=vpc-ssh-keys)."
+            "description":"Comma-separated list of names of the SSH key configured in your IBM Cloud account that is used to establish a connection to the Slurm management node. Ensure the SSH key is present in the same resource group and region where the cluster is being provisioned. If you do not have an SSH key in your IBM Cloud account, create one by using the instructions given here. [Learn more](https://cloud.ibm.com/docs/vpc?topic=vpc-ssh-keys)."
           },
           {
             "name": "api_key",

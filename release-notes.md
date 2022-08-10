@@ -3,7 +3,7 @@
 copyright:
   years: 2022
 
-lastupdated: "2022-05-07"
+lastupdated: "2022-08-10"
 
 keywords: Slurm on IBM Cloud release notes
 
@@ -22,6 +22,15 @@ content-type: release-note
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.slurm_full}} that are grouped by date.
 {: shortdesc}
+
+## August 2022
+{: #hpc-slurm-aug22}
+
+### 08 August 2022
+{: #hpc-slurm-aug0822}
+
+Bug fix
+:   Fixes were applied related to metadata files not getting copied from the management host to the worker nodes.
 
 ## February 2022
 {: #hpc-slurm-feb22}

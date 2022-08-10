@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-03-09"
+lastupdated: "2022-08-10"
 
 keywords: 
 
@@ -52,9 +52,9 @@ To securely forward private keys to remote nodes, you need to do `ssh-add` and `
 
 ```
 [your local PC]~$ ssh-add {id_rsa for slurm cluster}
-[your local PC]~# ssh -A -J root@jumpbox_fip root@master_private_ip
+[your local PC]~# ssh -A -J root@jumpbox_fip root@management_private_ip
 ...
-[root@master]~# ssh -A worker_private_ip
+[root@management]~# ssh -A worker_private_ip
 ```
 {: codeblock}
 
