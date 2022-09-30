@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-08-10"
+lastupdated: "2022-09-30"
 
 keywords: 
 
@@ -123,68 +123,7 @@ class HPCCEnvironmentValues:
 ## `config.json` template file
 {: #template-file}
 
-```json
-{
-    "name": "Schematic Slurm Workspace",
-    "type": [
-      "terraform_v0.14"
-    ],
-    "location": "us-south",
-    "resource_group": "Default",
-    "description": "",
-    "tags": ["hpcc", "slurm"],
-    "template_repo": {
-      "url": "https://github.ibm.com/workload-eng-services/hpc-cluster-slurm"
-    },
-    "template_data": [
-      {
-        "folder": ".",
-        "type": "terraform_v0.14",
-        "env_values":[
-          { 
-            "TF_CLI_ARGS_apply": "-parallelism=250"
-          },
-          { 
-            "TF_CLI_ARGS_plan": "-parallelism=250"
-          },
-          {
-            "TF_CLI_ARGS_destroy": "-parallelism=250"
-          },
-          { 
-            "VAR1":"<val1>"
-          },
-          {
-            "VAR2":"<val2>"
-          } 
-        ],
-        "variablestore": [
-          {
-            "name": "cluster_prefix",
-            "value": "hpcc-slurm-test",
-            "type": "string",
-            "secure": false,
-            "description": "Prefix that is used to name the Slurm cluster and IBM Cloud resources that are provisioned to build the Slurm cluster instance. You cannot create more than one instance of the Slurm cluster with the same name. Make sure that the name is unique. Enter a prefix name, such as my-hpcc."
-          },
-          {
-            "name": "ssh_key_name",
-            "value": "Please fill here",
-            "type": "string",
-            "secure": false,
-            "description":"Comma-separated list of names of the SSH key configured in your IBM Cloud account that is used to establish a connection to the Slurm management node. Ensure the SSH key is present in the same resource group and region where the cluster is being provisioned. If you do not have an SSH key in your IBM Cloud account, create one by using the instructions given here. [Learn more](https://cloud.ibm.com/docs/vpc?topic=vpc-ssh-keys)."
-          },
-          {
-            "name": "api_key",
-            "value": "Please fill here",
-            "type": "string",
-            "secure": true,
-            "description": "This is the API key for IBM Cloud account in which the Slurm cluster needs to be deployed. [Learn more](https://cloud.ibm.com/docs/account?topic=account-userapikey)."
-          }  
-        ]
-      }
-    ]
-  }
-```
-{: codeblock}
+Use this template file in the public GitHub repository: [config.json](https://github.com/IBM-Cloud/hpc-cluster-slurm/blob/main/sample/configs/hpc_workspace_config.json){: external}
 
 ## Example Python response
 {: #example-python-response-update-variables}
