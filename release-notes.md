@@ -3,7 +3,7 @@
 copyright:
   years: 2022
 
-lastupdated: "2022-08-10"
+lastupdated: "2022-09-30"
 
 keywords: Slurm on IBM Cloud release notes
 
@@ -23,11 +23,22 @@ content-type: release-note
 Use these release notes to learn about the latest updates to {{site.data.keyword.slurm_full}} that are grouped by date.
 {: shortdesc}
 
+## September 2022
+{: #hpc-slurm-sept22}
+
+### 26 September 2022
+{: #hpc-slurm-sept2622}
+{: release-note}
+
+Red Hat&reg; Enterprise Linux&reg; (RHEL) stock image update
+:   The login node and NFS storage node were updated to use RHEL 8.6 instead of RHEL 8.2.
+
 ## August 2022
 {: #hpc-slurm-aug22}
 
 ### 08 August 2022
 {: #hpc-slurm-aug0822}
+{: release-note}
 
 Bug fix
 :   Fixes were applied related to metadata files not getting copied from the management host to the worker nodes.
