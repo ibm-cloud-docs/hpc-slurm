@@ -31,12 +31,16 @@ toc:
       - updating-variables.md
   - navgroup:
       id: reference
-      topics: 
+      topics:
       - topicgroup:
-          label: IBM Cloud Schematics CLI
-          topics:
-           - include: ../schematics/cli-reference.md
-           - include: ../schematics/cli-version-release.md
+           label: IBM Cloud Schematics CLI
+           topics:
+            - link:
+                label: IBM Cloud Schematics CLI
+                href: https://cloud.ibm.com/docs/schematics?topic=schematics-schematics-cli-reference
+            - link:
+                label: CLI version history
+                href: https://cloud.ibm.com/docs/schematics?topic=schematics-cli_version-releases
       - link:
           label: IBM Cloud Schematics API
           href: https://cloud.ibm.com/apidocs/schematics
