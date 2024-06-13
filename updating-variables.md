@@ -24,7 +24,7 @@ subcollection: hpc-slurm
 # Updating variables with Schematics API
 {: #update-variables}
 
-. To update variables by using the {{site.data.keyword.bplong}} Python APIs, create two Python files, and provide a name of your choice for those files, for example, `schematics_variables_update.py` and `schematics_env_class.py`.
+1. To update variables by using the {{site.data.keyword.bplong}} Python APIs, create two Python files, and provide a name of your choice for those files, for example, `schematics_variables_update.py` and `schematics_env_class.py`.
 2. Copy and paste the [`schematics_variables_update.py`](/docs/hpc-slurm?topic=hpc-slurm-update-variables#example-request-update-variables) and [`schematics_env_class.py`](/docs/hpc-slurm?topic=hpc-slurm-update-variables#example-request-update-variables-file) Python example code requests to the respective Python files.
 3. Copy and paste the [`config.json` template file](/docs/hpc-slurm?topic=hpc-slurm-update-variables#template-file) to a JSON file, for example `config.json`.
 4. Change the following parameters as part of the request:

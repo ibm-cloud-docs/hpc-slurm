@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2022
-lastupdated: "2022-03-09"
+lastupdated: "2022-03-07"
 
 keywords: 
 
@@ -16,7 +16,7 @@ subcollection: hpc-slurm
 {:external: target="_blank" .external}
 {:pre: .pre}
 {:tip: .tip}
-{:note: .note}
+{:note .note}
 {:important: .important}
 
 # Installing a VPN to an HPC cluster
@@ -49,7 +49,6 @@ ibmcloud schematics logs --id <WORKSPACE_ID>
 {: pre}
 
 **Example response:**
-
 ```
  2021/09/21 06:04:49 Terraform apply | Outputs:
  2021/09/21 06:04:49 Terraform apply | 
@@ -66,5 +65,5 @@ Alternatively, you can use the {{site.data.keyword.cloud_notm}} console to check
 ## Step 3. Configure your local VPN environment
 {: #step-3-configure-vpn-environment}
 
-Typical VPN configurations require a public IP address for the local VPN server, a local CIDR, preshared key, a peer IP address, and a peer CIDR. In the example above, you first need to configure your local VPN server with public IP address, local CIDR, and preshared key, which are identical to what you specified for `vpn_peer_address`, `vpn_peer_cidr`, and `vpn_preshared_key` at Step 1. Then, your local VPN configuration needs to add a peer IP address to be `162.133.aaa.bbb` and a peer CIDR to be `10.244.0.16/28` according to the output of Step 2. Finally, UDP ports 500 and 4500 must be accessible from the VPN gateway on {{site.data.keyword.Bluemix_notm}} by configuring your local network devices (for example, routers). For more details on configuring your VPN, see [Connecting to your on-premises network](/docs/vpc?topic=vpc-vpn-onprem-example).
+Typical VPN configurations require a public IP address for the local VPN server, a local CIDR, preshared key, a peer IP address, and a peer CIDR. In the example, you first need to configure your local VPN server with public IP address, local CIDR, and preshared key, which are identical to what you specified for `vpn_peer_address`, `vpn_peer_cidr`, and `vpn_preshared_key` at Step 1. Then, your local VPN configuration needs to add a peer IP address to be `162.133.aaa.bbb` and a peer CIDR to be `10.244.0.16/28` according to the output of Step 2. Finally, UDP ports 500 and 4500 must be accessible from the VPN gateway on {{site.data.keyword.Bluemix_notm}} by configuring your local network devices (for example, routers). For more details on configuring your VPN, see [Connecting to your on-premises network](/docs/vpc?topic=vpc-vpn-onprem-example).
 

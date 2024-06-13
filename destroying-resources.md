@@ -35,7 +35,7 @@ Before you perform the actions to destroy the resources, you must ensure that th
 {: #destroy-resources-ui}
 {: ui}
 
-1. In the {{site.data.keyword.cloud_notm}} console on the **{{site.data.keyword.slurm_short}} > Workspaces** page, select **Actions > Destroy** to delete all of the related VPC resources that were deployed as part of that workspace.
+1. In the {{site.data.keyword.cloud_notm}} console on the **{{site.data.keyword.bpshort}} > Workspaces** page, select **Actions > Destroy** to delete all of the related VPC resources that were deployed as part of that workspace.
 2. If you select the option to destroy resources, decide whether you want to destroy all of them. This action cannot be undone. 
 3. Confirm the action by entering the workspace name in the text box and click **Destroy**.
 

@@ -40,7 +40,7 @@ After you've created your workspace, you need to generate a plan to validate all
 {: #next-steps-generate-ui}
 {: ui}
 
-After you've successfully generated a plan, you can begin [Applying a plan](/docs/hpc-slurm?topic=hpc-slurm-applying-plan&interface=ui) to deploy your {{site.data.keyword.cloud_notm}} resources to build a Slurm cluster instance.
+After you've successfully generated a plan, you can begin [Applying a plan](/docs/hpc-slurm?topic=hpc-slurm-applying-plan&interface=ui) to deploy your {{site.data.keyword.cloud_notm}} resources to build a {{site.data.keyword.slurm_short}} cluster instance.
 
 ## Generating a plan using the CLI
 {: #generate-plan-cli}
@@ -146,4 +146,4 @@ INFO:root:Completed Generating Schematic Plan
 {: #next-steps-generate-plan-api}
 {: api}
 
-After you've successfully generated a plan, you can begin [Applying a plan](/docs/hpc-slurm?topic=hpc-slurm-applying-plan&interface=api) to deploy your {{site.data.keyword.cloud_notm}} resources to build a Slurm cluster instance.
+After you've successfully generated a plan, you can begin [Applying a plan](/docs/hpc-slurm?topic=hpc-slurm-applying-plan&interface=api) to deploy your {{site.data.keyword.cloud_notm}} resources to build a {{site.data.keyword.slurm_short}} cluster instance.
