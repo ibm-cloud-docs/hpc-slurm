@@ -49,5 +49,4 @@ The following deployment values can be used to configure the {{site.data.keyword
 | `worker_node_count` | This is the number of worker nodes that will be provisioned at the time the cluster is created. Enter a value in the range 1 - 500. | Number | No | 1 |
 | `worker_node_instance_type` | Specify the virtual server instance profile type to be used to create the worker nodes for the {{site.data.keyword.slurm_short}} cluster. The worker nodes are the ones where the workload execution takes place and the choice should be made according to the characteristics of the workloads. For choices on profile types, see [Instance profiles](/docs/vpc?topic=vpc-profiles). | String | No | bx2-4x16 |
 | `zone` | {{site.data.keyword.Bluemix_notm}} zone name within the selected region where the {{site.data.keyword.slurm_short}} cluster should be deployed. To get a full list of zones within a region, see [Get zones by using the CLI](/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region#get-zones-using-the-cli). | String | Yes | None |
-{: caption="Table 1. Deployment values" caption-side="top"} 
-
+{: caption="Deployment values" caption-side="top"} 
