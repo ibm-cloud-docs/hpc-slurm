@@ -35,7 +35,7 @@ Cluster nodes that are deployed with this offering include {{site.data.keyword.s
 
 Available regions and zones for deploying VPC resources and a mapping of those to city locations and data centers can be found in [Locations for resource deployment](/docs/overview?topic=overview-locations).
 
-## What permissions do I need to create a cluster using the offering?
+## What permissions you need to create a cluster using the offering?
 {: #permissions-cluster-offering}
 {: faq}
 
@@ -45,7 +45,7 @@ Instructions for setting the appropriate permissions for {{site.data.keyword.Blu
 {: #ssh-among-nodes}
 {: faq}
 
-All of the nodes in the HPC cluster have the same public key that you register at your cluster creation. You can use ssh-agent forwarding, which is a common technique to access remote nodes that have the same public key. It automates to securely forward private keys to remote nodes. Forwarded keys are deleted immediately after a session is closed.
+All the nodes in the HPC cluster have the same public key that you register at your cluster creation. You can use ssh-agent forwarding, which is a common technique to access remote nodes that have the same public key. It automates to securely forward private keys to remote nodes. Forwarded keys are deleted immediately after a session is closed.
 
 To securely forward private keys to remote nodes, you need to do `ssh-add` and `ssh -A`.
 
@@ -82,7 +82,7 @@ When creating or deleting a cluster with many worker nodes, you might encounter 
 {: #terraform-parallelism}
 {: faq}
 
-The Terraform [parallelism](https://www.terraform.io/docs/cloud/workspaces/variables.html#parallelism){: external} flag is used to control the number of concurrent operations allowed for Terraform plan, Terraform apply, and Terraform destroy. A larger number can result in faster overall cluster create and destroy times. However, too large a value might result in operation failures. For plan and apply, it's recommended to use values up to 250, and for destroy, it's recommended to use values up to 100. Note that setting the values for parallelism is not possible when using the [Schematics UI](/docs/hpc-slurm?topic=hpc-slurm-creating-workspace&interface=ui). However, the values for that flag can be set in the `config.json` file that is used when you create the [Schematics workspace](/docs/hpc-slurm?topic=hpc-slurm-creating-workspace&interface=cli#create-workspace-cli) through the CLI:
+The Terraform [parallelism](https://www.terraform.io/docs/cloud/workspaces/variables.html#parallelism){: external} flag is used to control the number of concurrent operations allowed for Terraform plan, Terraform apply, and Terraform destroy. A larger number can result in faster overall cluster create and destroy times. However, too large a value might result in operation failures. For plan and apply, it's recommended to use values up to 250, and for destroy, it's recommended to use values up to 100. Setting the values for parallelism is not possible when using the [Schematics UI](/docs/hpc-slurm?topic=hpc-slurm-creating-workspace&interface=ui). However, the values for that flag can be set in the `config.json` file that is used when you create the [Schematics workspace](/docs/hpc-slurm?topic=hpc-slurm-creating-workspace&interface=cli#create-workspace-cli) through the CLI:
 
  ```
  "env_values":[

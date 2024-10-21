@@ -33,22 +33,22 @@ With {{site.data.keyword.bplong}} workspaces, you can manage the Terraform-based
 {: #create-workspace-ui}
 {: ui}
 
-1. Go to [Schematics, IBM Cloud’s deployment manager](https://cloud.ibm.com/schematics){: external}, select **Workspaces**, and then select **Create workspace**.
-2. In the _Specify template_ section:
+1. Go to [Schematics, IBM Cloud’s deployment manager](https://cloud.ibm.com/schematics){: external}, select Workspaces, and then select Create workspace.
+2. In the Specify template section:
     * Provide your GitHub, GitLab, or Bitbucket repository URL where your Terraform files reside. The {{site.data.keyword.slurm_short}} repository is provided by {{site.data.keyword.Bluemix_notm}} in this [public GitHub repository](https://github.com/IBM-Cloud/hpc-cluster-slurm){: external}.
     * If you are using a private GitHub repository, provide your personal GitHub access token.
-    * Select the version of the Terraform engine that's used in the {{site.data.keyword.bpshort}} workspace, and then click **Next**.
-3. In the _Workspace details_ section:
+    * Select the version of the Terraform engine that is used in the {{site.data.keyword.bpshort}} workspace, and then click Next.
+3. In the Workspace details section:
     * Specify the name for your {{site.data.keyword.bpshort}} workspace.
     * Define any tags that you want to associate with the resources provisioned through the offering. The tags can later be used to query the resources in the {{site.data.keyword.Bluemix_notm}} console.
     * Select a resource group.
     * Select a location. The location determines where the workspace actions are run.
     * Provide a description (optional) of the {{site.data.keyword.bpshort}} workspace.
-    * Click **Next** and then click **Create**. The {{site.data.keyword.bpshort}} workspace is created with the name that you specified.
-4. Go to **Schematic Workspace Settings**, and in the variable section, click "burger icons" to update the following parameters:
+    * Click Next and then click Create. The {{site.data.keyword.bpshort}} workspace is created with the name that you specified.
+4. Go to Schematic Workspace Settings, and in the variable section, click "burger icons" to update the following parameters:
     * Update `api_key` with the API key value. Mark it as sensitive to hide the API key in the {{site.data.keyword.Bluemix_notm}} console.
     * Update `ssh_key_name` with your {{site.data.keyword.Bluemix_notm}} SSH key name such as "slurm-ssh-key" that is created in a specific region in {{site.data.keyword.Bluemix_notm}}.
-    * Update the `zone` value where the cluster should be deployed.
+    * Update the `zone` value where the cluster must be deployed.
     * Update the `cluster_prefix value` to the specific cluster prefix for your {{site.data.keyword.slurm_short}} cluster.
     * Update the `cluster_id`. This is the ID of the cluster that is used by {{site.data.keyword.slurm_short}} for configuration of resources.
     * Update the `worker_node_count` according to your requirement.
@@ -57,13 +57,13 @@ With {{site.data.keyword.bplong}} workspaces, you can manage the Terraform-based
 {: #next-steps-create-ui}
 {: ui}
 
-After you've successfully created a workspace, you can begin [Generating a plan](/docs/hpc-slurm?topic=hpc-slurm-generate-plan&interface=ui#generate-plan-ui) to validate all of the configuration properties.
+After you successfully created a workspace, you can begin [Generating a plan](/docs/hpc-slurm?topic=hpc-slurm-generate-plan&interface=ui#generate-plan-ui) to validate all the configuration properties.
 
 ## Before you begin
 {: #before-you-begin-creating-cli}
 {: cli}
 
-Before you get started, make sure that you've completed the prerequisites found in [Setting up the {{site.data.keyword.bplong_notm}} CLI](/docs/hpc-slurm?topic=hpc-slurm-setting-up-cli&interface=cli). 
+Before you get started, make sure that you completed the prerequisites found in [Setting up the {{site.data.keyword.bplong_notm}} CLI](/docs/hpc-slurm?topic=hpc-slurm-setting-up-cli&interface=cli). 
 
 ## Creating a workspace using the CLI
 {: #create-workspace-cli}
@@ -128,13 +128,13 @@ To provision or modify {{site.data.keyword.cloud_notm}} resources, you can run t
 {: #next-steps-create-cli}
 {: cli}
 
-After you've successfully created a workspace, you can begin [Generating a plan](/docs/hpc-slurm?topic=hpc-slurm-generate-plan&interface=cli) to validate all of the configuration properties. 
+After you successfully created a workspace, you can begin [Generating a plan](/docs/hpc-slurm?topic=hpc-slurm-generate-plan&interface=cli) to validate all the configuration properties. 
 
 ## Before you begin
 {: #before-you-begin-creating-api}
 {: api}
 
-Before you get started, make sure that you've completed the prerequisites found in [Setting up the {{site.data.keyword.bplong_notm}} API](/docs/hpc-slurm?topic=hpc-slurm-setting-up-api&interface=cli).
+Before you get started, make sure that you completed the prerequisites found in [Setting up the {{site.data.keyword.bplong_notm}} API](/docs/hpc-slurm?topic=hpc-slurm-setting-up-api&interface=cli).
 
 ## Creating a workspace using the API
 {: #create-workspace-api}
@@ -151,14 +151,14 @@ Before you get started, make sure that you've completed the prerequisites found 
     * Provide your GitHub or GitLab Repository HTTPS URL where your Terraform files reside in the `template_repo_request_model['url']` variable. If you are using the [public repository](https://github.com/IBM-Cloud/hpc-cluster-slurm){: external} that is provided by {{site.data.keyword.cloud_notm}}, then set this variable as `template_repo_request_model['url'] = 'https://github.com/IBM-Cloud/hpc-cluster-slurm'`; otherwise, set it to the private repository you are using. 
 4. Inside the `schematics_service.create_workspace` function, provide the following parameters:
     * Provide an optional description.
-    * Provide a name to identify your {{site.data.keyword.bpshort}} workspace, for example, `terraform-dev-workspace`.
+    * Provide a name to identify your {{site.data.keyword.bpshort}} workspace, for example `terraform-dev-workspace`.
     * Change the `type` parameter to the Terraform version that you are using to create {{site.data.keyword.cloud_notm}} resources, for example, `terraform_v0.14`.
     * Change the location to a region where your {{site.data.keyword.bpshort}} workspace needs to be created, for example, `us-south`.
-    * Change the resource group to the resource group where your resources should be grouped, for example, `Default` for a default resource group.
+    * Change the resource group to the resource group where your resources must be grouped, for example, `Default` for a default resource group.
     * If you are using a private GitHub repository, provide your personal GitHub access token that you set up in [Setting up the {{site.data.keyword.bplong_notm}}](/docs/ibm-slurm?topic=ibm-slurm-setting-up-api) prerequisites in the `x_github_token= "<github-api-token>"` parameter. If you are using the public repository that is provided by {{site.data.keyword.cloud_notm}}, you do not need to specify this parameter.
     * **Optional**: Provide the tags if you want to filter resources by using the tag.
 5. Run the Python script by using `python3 <python-file-name>` to create a {{site.data.keyword.bpshort}} workspace in the {{site.data.keyword.cloud_notm}}.
-6. You get a successful response if the parameters passed as part of the request are valid and you should be able to see the {{site.data.keyword.bpshort}} workspace that you created in the {{site.data.keyword.cloud_notm}} console. If you don’t get a successful response, the error response contains the errors that you need to resolve. Resolve those errors and run the script until you are able to get a valid response and create a workspace.
+6. You get a successful response if the parameters passed as part of the request are valid and you must be able to see the {{site.data.keyword.bpshort}} workspace that you created in the {{site.data.keyword.cloud_notm}} console. If you don’t get a successful response, the error response contains the errors that you need to resolve. Resolve those errors and run the script until you are able to get a valid response and create a workspace.
 7. Optional: If you want to add one of the variables such as `base_name` with the value `slurm-test` when you create a workspace, provide the values in the following parameters:
     * `workspace_variable_request_model = {}`
     * `workspace_variable_request_model['name'] = 'base_name'` 
@@ -330,4 +330,4 @@ INFO:root:Completed Creating Schematic Workspace
 {: #next-steps-create-api}
 {: api}
 
-After you've successfully created a workspace, you can begin [Generating a plan](/docs/hpc-slurm?topic=hpc-slurm-generate-plan&interface=api) to validate all of the configuration properties. 
+After you successfully created a workspace, you can begin [Generating a plan](/docs/hpc-slurm?topic=hpc-slurm-generate-plan&interface=api) to validate all the configuration properties. 
