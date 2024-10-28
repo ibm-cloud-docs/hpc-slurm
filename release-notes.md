@@ -17,7 +17,7 @@ content-type: release-note
 {:external: target="_blank" .external}
 {:release-note: data-hd-content-type='release-note'}
 
-# Release notes for Slurm on IBM Cloud
+# Release notes
 {: #release-notes}
 
 Use these release notes to learn about the latest updates to {{site.data.keyword.slurm_full}} that are grouped by date.
