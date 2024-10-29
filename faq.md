@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-08-10"
+  years: 2022, 2024
+lastupdated: "2024-10-29"
 
 keywords: 
 
@@ -27,7 +27,7 @@ subcollection: hpc-slurm
 {: #my-faq-packages}
 {: faq}
 
-Cluster nodes that are deployed with this offering include {{site.data.keyword.slurm_short}} 19.05.5-1 Advanced Edition. 
+Cluster nodes that are deployed with this offering include {{site.data.keyword.slurm_short}} 21.08.5 Advanced Edition. 
 
 ## What locations are available for deploying VPC resources?
 {: #locations-vpc-resources}

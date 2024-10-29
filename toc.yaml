@@ -40,7 +40,7 @@ toc:
                 href: https://test.cloud.ibm.com/docs/hpc-slurm?topic=hpc-slurm-setting-up-cli
             - link:
                 label: CLI version history
-                href: https://cloud.ibm.com/docs/schematics?topic=schematics-cli_version-releases
+                href: https://cloud.ibm.com/docs/schematics?topic=schematics-schematics-relnotes
       - link:
           label: IBM Cloud Schematics API
           href: https://cloud.ibm.com/apidocs/schematics
