@@ -1,0 +1,41 @@
+{
+    "version": 2,
+    "title": "Slurm on IBM Cloud",
+    "introduction": "Find useful information to learn about Slurm on IBM Cloud.",
+    "product_page": "https://www.ibm.com/products/slurm",
+    "section_topics": {
+      "links": [
+        {
+          "title": "Getting started with Slurm",
+          "href": "/docs/hpc-slurm?topic=hpc-slurm-getting-started-tutorial&interface=ui"
+        },
+        {
+          "title": "Deployment values",
+          "href": "/docs/hpc-slurm?topic=hpc-slurm-deployment-values&interface=ui"
+        },
+        {
+          "title": "Installing a VPN to an HPC cluster",
+          "href": "/docs/hpc-slurm?topic=hpc-slurm-install-vpn-hpc-cluster&interface=ui"
+        },
+        {
+          "title": "Retrieving action logs with Schematics API",
+          "href": "/docs/hpc-slurm?topic=hpc-slurm-retrieve-action-logs&interface=ui"
+        },
+        {
+          "title": "FAQs",
+          "href": "/docs/hpc-slurm?topic=hpc-slurm-slurm-faqs&interface=ui"
+        }
+      ]
+    },
+    "section_highlights": [
+      {
+        "title": "Slurm on IBM Cloud",
+        "description": "Slurm on IBM Cloud allows you to deploy high-performance computing (HPC) clusters that use the Slurm Workload Manager as HPC scheduling software.",
+        "href": "https://test.cloud.ibm.com/docs/hpc-slurm?topic=hpc-slurm-about-slurm&interface=ui",
+        "type": "training"
+      }
+    ],
+    "section_updates": {
+      "view_more": "/docs/hpc-slurm?topic=hpc-slurm-release-notes&interface=ui"
+    }
+  }
