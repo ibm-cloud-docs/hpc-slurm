@@ -24,7 +24,7 @@ subcollection: hpc-slurm
 
 You can enable a VPN gateway to your HPC cluster. The following figure is an example of a VPN deployment.
 
-![Architecture diagram for VPN deployment](images/hpcc_vpn.png){:caption="VPN deployment example" caption-side="bottom"}
+![Architecture diagram for VPN deployment](images/hpcc_vpn.png){: caption="VPN deployment example" caption-side="bottom"}
 
 This example links a VPN gateway to the subnet for {{site.data.keyword.slurm_short}} nodes. By doing this, local clients can directly access them with private IP addresses (for example, 192.168.3.236 to 10.244.0.21). This documentation gives a step-by-step guide to create the example deployment.
 

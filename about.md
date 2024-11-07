@@ -33,4 +33,4 @@ The offering enables the initial {{site.data.keyword.slurm_short}}-based HPC clu
 ## Architecture diagram
 {: #architecture-diagram}
 
-![Architecture diagram](images/6547a000-51eb-11ec-9d0c-2f3bcee6ceb8.png){:caption="Architecture diagram of a {{site.data.keyword.slurm_short}} cluster on {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
+![Architecture diagram](images/6547a000-51eb-11ec-9d0c-2f3bcee6ceb8.png){: caption="Architecture diagram of a {{site.data.keyword.slurm_short}} cluster on {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
