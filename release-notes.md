@@ -1,11 +1,11 @@
 ---
 
 copyright:
-  years: 2022
+  years: 2022, 2024
 
-lastupdated: "2022-09-30"
+lastupdated: "2024-11-11"
 
-keywords: Slurm on IBM Cloud release notes
+keywords: release notes
 
 subcollection: hpc-slurm
 
