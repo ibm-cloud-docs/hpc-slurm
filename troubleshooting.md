@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-02-09"
+  years: 2022, 2024
+lastupdated: "2024-10-29"
 
 keywords: 
 
@@ -38,7 +38,7 @@ subcollection: hpc-slurm
 You didn't provide the correct GitHub token, or you didn't provide a GitHub token altogether.
 {: tsCauses}
 
-Provide a [GitHub token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token){: external} and check to see whether the correct GitHub token has been provided in the `github_token` parameter in the create workspace API.
+Provide a [GitHub token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens){: external} and check to see whether the correct GitHub token is provided in the `github_token` parameter in the created workspace API.
 {: tsResolve}
 
 ## Why is IBM Cloud Schematics not able to clone the public GitHub repo?
@@ -83,7 +83,7 @@ Contact your account administrator and get assigned with the manager role on the
 You don't have the required access to get any VPC resources provisioned. 
 {: tsCauses}
 
-Contact your account administrator and get all of the required accesses. For more information, see [Required permissions](/docs/vpc?topic=vpc-resource-authorizations-required-for-api-and-cli-calls).
+Contact your account administrator and get all the required accesses. For more information, see [Required permissions](https://cloud.ibm.com/docs/vpc?topic=vpc-managing-user-permissions-for-vpc-resources&interface=cli).
 {: tsResolve}
 
 ## Why is IBM Cloud Schematics not able to provision the cluster and fails with an error that the provided name is not unique? 
@@ -128,7 +128,7 @@ The custom image that is used for one of the virtual server instances isn't pres
 If you are using a custom image for any of your virtual server instances, ensure that the custom image is available in the target region and zone and is accessible by the account and API key that is used to provision the cluster.
 {: tsResolve}
 
-## Why am I receiving an error for my refresh token?
+## Why am I receiving an error for the refresh token?
 {: #troubleshoot-topic-8}
 {: troubleshoot}
 {: support}
@@ -153,5 +153,5 @@ You are receiving the following error when you try to apply a change to your wor
 After reconfiguring the volume profile, capacity, or IOPS, your workspace needs to be cleaned up before applying the change. 
 {: tsCauses}
 
-You need to destroy your existing resources and try applying the change again. Your data on the storage node will be deleted if you destroy your existing resources.
+You need to destroy your existing resources and try applying the change again. Your data on the storage node is deleted if you destroy your existing resources.
 {: tsResolve}

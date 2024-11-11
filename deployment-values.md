@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-08-10"
+  years: 2022, 2024
+lastupdated: "2024-11-07"
 
 keywords: 
 
@@ -46,7 +46,7 @@ The following deployment values can be used to configure the {{site.data.keyword
 | `vpn_peer_address` | The peer public IP address to which the VPN is connected.| String | No | `_NOT_SET_`  |
 | `vpn_peer_cidrs` | Comma-separated list of peer CIDRs (for example, 192.168.0.0/24) to which the VPN is connected.| String | No | `_NOT_SET_`  |
 | `vpn_preshared_key` | The pre-shared key for the VPN. | String | No | `_NOT_SET_` |
-| `worker_node_count` | This is the number of worker nodes that will be provisioned at the time the cluster is created. Enter a value in the range 1 - 500. | Number | No | 1 |
-| `worker_node_instance_type` | Specify the virtual server instance profile type to be used to create the worker nodes for the {{site.data.keyword.slurm_short}} cluster. The worker nodes are the ones where the workload execution takes place and the choice should be made according to the characteristics of the workloads. For choices on profile types, see [Instance profiles](/docs/vpc?topic=vpc-profiles). | String | No | bx2-4x16 |
-| `zone` | {{site.data.keyword.Bluemix_notm}} zone name within the selected region where the {{site.data.keyword.slurm_short}} cluster should be deployed. To get a full list of zones within a region, see [Get zones by using the CLI](/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region#get-zones-using-the-cli). | String | Yes | None |
-{: caption="Table 1. Deployment values" caption-side="top"} 
+| `worker_node_count` | This is the number of worker nodes that are provisioned at the time the cluster is created. Enter a value in the range 1 - 500. | Number | No | 1 |
+| `worker_node_instance_type` | Specify the virtual server instance profile type to be used to create the worker nodes for the {{site.data.keyword.slurm_short}} cluster. The worker nodes are the ones where the workload execution takes place and the choice must be made according to the characteristics of the workloads. For choices on profile types, see [Instance profiles](/docs/vpc?topic=vpc-profiles). | String | No | bx2-4x16 |
+| `zone` | {{site.data.keyword.Bluemix_notm}} zone name within the selected region where the {{site.data.keyword.slurm_short}} cluster must be deployed. To get a full list of zones within a region, see [Get zones by using the CLI](/docs/vpc?topic=vpc-creating-a-vpc-in-a-different-region&interface=cli#get-zones-using-the-cli). | String | Yes | None |
+{: caption="Deployment values" caption-side="top"} 

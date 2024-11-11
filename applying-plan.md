@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-02-08"
+  years: 2022, 2024
+lastupdated: "2024-11-08"
 
 keywords: 
 
@@ -34,7 +34,7 @@ When you apply a plan, the {{site.data.keyword.cloud}} resources are deployed to
 
 1. After you generate a plan in the {{site.data.keyword.cloud_notm}} console, click **Apply plan**. This action generates a new log that can be viewed in the Jobs tab.
 2. Review the log file for any errors, fix the errors, and then click **Apply plan** again.
-3. After you successfully apply a plan, you can review all of the resources that are deployed under this workspace by clicking the _Resources_ tab. 
+3. After you successfully apply a plan, you can review all the resources that are deployed under this workspace by clicking the _Resources_ tab. 
 
 ## Applying a plan using the CLI
 {: #apply-plan-cli}
@@ -67,7 +67,7 @@ ibmcloud schematics logs --id <WORKSPACE_ID>
 ```
 {: screen}
 
-After the plan is successfully applied, it generates an `sshcommand` in the _Outputs_ section in the Terraform code. You can use this command to log in to the {{site.data.keyword.slurm_short}} cluster. If you specified IP addresses for `ssh_allowed_ips` property only, those IP address machines would be able to use this SSH command.
+After the plan is successfully applied, it generates an `sshcommand` in the _Outputs_ section in the Terraform code. You can use this command to log in to the {{site.data.keyword.slurm_short}} cluster. If you specified IP addresses for `ssh_allowed_ips` property only, those IP address system would be able to use this SSH command.
 
 ## Applying a plan using the API
 {: #apply-plan-api}
@@ -89,7 +89,7 @@ After the plan is successfully applied, it generates an `sshcommand` in the _Out
     {: pre}
 
 5. Run the Python script by using `python3 <python-file-name>` to apply a plan in the {{site.data.keyword.cloud_notm}}.
-6. You get an activity ID in response if the parameters passed as part of the request are valid. You should see the plan being applied in the {{site.data.keyword.bpshort}} workspace that you created in the {{site.data.keyword.cloud_notm}} console. If you don’t get a successful response, the error response contains the errors that you need to resolve. Resolve those errors and run the script until you are able to get a valid response and apply a plan.
+6. You get an activity ID in response if the parameters passed as part of the request are valid. You must see the plan being applied in the {{site.data.keyword.bpshort}} workspace that you created in the {{site.data.keyword.cloud_notm}} console. If you don’t get a successful response, the error response contains the errors that you need to resolve. Resolve those errors and run the script until you are able to get a valid response and apply a plan.
 7. If you want to check the logs of the action, see [Retrieving action logs with {{site.data.keyword.bpshort}} API](/docs/hpc-slurm?topic=hpc-slurm-retrieve-action-logs&interface=api) to retrieve the logs. The response contains the status of the action, and it appears in either a `COMPLETED` or `FAILED` state.
 
 ### Example Python request
@@ -144,4 +144,3 @@ DEBUG:urllib3.connectionpool:https://us.schematics.cloud.ibm.com:443 "PUT /v1/wo
 INFO:root:Completed Applying Schematic Plan
 ```
 {: screen}
-
